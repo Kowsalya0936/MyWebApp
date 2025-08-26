@@ -1,69 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Colorful Message Board</title>
+    <meta charset="UTF-8">
+    <title>Welcome to My WebApp</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #74ebd5, #ACB6E5);
-            text-align: center;
+            background-color: #f4f4f4;
             color: #333;
             margin: 0;
             padding: 20px;
         }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
         h1 {
             color: #2C3E50;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            text-align: center;
         }
-        form {
-            background: #ffffffcc;
-            padding: 20px;
-            border-radius: 15px;
-            display: inline-block;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        p {
+            font-size: 18px;
+            line-height: 1.6;
         }
-        input, textarea, button {
-            width: 250px;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-        }
-        button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-        button:hover {
-            background: #45a049;
-        }
-        hr {
-            margin: 40px 0;
-            border: none;
-            height: 2px;
-            background: #fff;
-        }
-        iframe {
-            background: #ffffffcc;
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <h1>🎨 Colorful Message Board 🎨</h1>
-    <form action="message" method="post">
-        <input type="text" name="username" placeholder="Your name" required><br>
-        <textarea name="message" placeholder="Write your colorful message..." required></textarea><br>
-        <button type="submit">Post Message</button>
-    </form>
-    <hr>
-    <h2>Messages</h2>
-    <iframe src="message" width="400" height="300"></iframe>
+    <div class="container">
+        <h1>Welcome to My Web Application</h1>
+        <p>
+            This is an informational page. You can include details about your project, 
+            contact information, or any other content you want to share with visitors.
+        </p>
+        <p>
+            Update this section with relevant information such as your purpose, mission, 
+            or instructions for users.
+        </p>
+        <footer>
+            &copy; 2025 My WebApp. All rights reserved.
+        </footer>
+    </div>
 </body>
 </html>
-
